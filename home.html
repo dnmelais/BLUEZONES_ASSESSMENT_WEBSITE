@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Zones City Assessment</title>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <h1> Blue Zones City Assessment Webpage </h1>
+            <p> Blue Zones Project® by Sharecare is a community-led well-being improvement initiative designed to make healthy choices easier through permanent changes to a city's environment, policy, and social networks. Blue Zones Project is based on research by Dan Buettner, a National Geographic Fellow and New York Times best-selling author who identified five cultures of the world—or blue zones —with the highest concentration of people living to 100 years or older. The Project incorporates Buettner’s findings and works with cities to implement policies and programs that will move a community toward optimal health and well-being.</p>
+        </header>
+
+        <section id="blueZonesMap">
+            <h2>Blue Zones Map</h2>
+            <h3>Click on the red dots to reveal information about each city</h3>
+            
+            <!-- Use an image map to define clickable areas on the map -->
+            <img src="c:/Users/Tech Louisville/Downloads/map.jpg" alt="Blue Zones Map" usemap="#blueZonesMapArea">
+        
+            <map name="blueZonesMapArea">
+                <!-- Define clickable areas for each city -->
+                <area shape="circle" coords="88,133,30" alt="Loma Linda, CA, USA" onclick="showDialog('Loma Linda')">
+                <area shape="circle" coords="161,191,30" alt="Nicoya, Costa Rica" onclick="showDialog('Nicoya')">
+                <area shape="circle" coords="356,121,30" alt="Sardinia, Italy" onclick="showDialog('Sardinia')">
+                <area shape="circle" coords="389,128,30" alt="Ikaria, Greece" onclick="showDialog('Ikaria')">
+                <area shape="circle" coords="591,127,30" alt="Okinawa, Japan" onclick="showDialog('Okinawa')">
+                <!-- Add more areas as needed -->
+            </map>
+        </section>
+
+        <!-- Survey Section -->
+        <div class="survey-container">
+            <h1>Interested in the Blue Zone Project for your city?</h1>
+            <form id="surveyForm">
+                <div class="question">
+                    <label for="q1">1. Does your city have a YMCA, Red Cross, Disaster Response, or similar community organizations?</label>
+                    <div class="options">
+                        <input type="radio" name="q1" value="yes"> Yes
+                        <input type="radio" name="q1" value="no"> No
+                    </div>
+                </div>
+        
+                <div class="question">
+                    <label for="q2">2. Is your city’s median age under 50 years old?</label>
+                    <div class="options">
+                        <input type="radio" name="q2" value="yes"> Yes
+                        <input type="radio" name="q2" value="no"> No
+                    </div>
+                </div>
+        
+                <div class="question">
+                    <label for="q3">3. Do the citizens in your city have good access to grocery stores and restaurants?</label>
+                    <div class="options">
+                        <input type="radio" name="q3" value="yes"> Yes
+                        <input type="radio" name="q3" value="no"> No
+                    </div>
+                </div>
+        
+                <div class="question">
+                    <label for="q4">4. Do most of the citizens in your city have a religious practice?</label>
+                    <div class="options">
+                        <input type="radio" name="q4" value="yes"> Yes
+                        <input type="radio" name="q4" value="no"> No
+                    </div>
+                </div>
+        
+                <div class="question">
+                    <label for="q5">5. In your opinion, could the overall sense of wellbeing in your community stand to be improved?</label>
+                    <div class="options">
+                        <input type="radio" name="q5" value="yes"> Yes
+                        <input type="radio" name="q5" value="no"> No
+                    </div>
+                </div>
+        
+                <button type="button" onclick="evaluateSurvey()">Submit</button>
+            </form>
+        
+            <div id="resultMessage" class="result-message"></div>
+        </div>
+        
+        <style>
+            .survey-container {
+                grid-area: survey;
+                background-color: #9bd19b; /* Light Green */
+                text-align: center;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+        
+            h1 {
+                color: #fff; /* White */
+            }
+        
+            .question {
+                margin-bottom: 20px;
+            }
+        
+            label {
+                display: block;
+                margin-bottom: 10px;
+            }
+        
+            .options {
+                display: inline-block;
+                margin-left: 10px;
+            }
+        
+            input[type="radio"] {
+                margin-right: 5px;
+            }
+        
+            button {
+                background-color: #3498db; /* Blue */
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        
+            button:hover {
+                background-color: #45a049;
+            }
+        
+            .result-message {
+                margin-top: 20px;
+                font-weight: bold;
+            }
+        </style>
+        
+        </div>
+
+        <!-- Data Visualization Section -->
+        <section id="dataVisualization">
+            <h2>Data Visualization</h2>
+            <!-- Your charts/graphs go here -->
+        </section>
+
+        <!-- City Information Section -->
+        <section id="cityInformation">
+            <h2>City Information</h2>
+            <input type="text" id="cityInput" placeholder="Enter your U.S. city">
+            <button onclick="searchCity()">Search</button>
+            <div id="cityResults">
+                <!-- Results from the Census Bureau API will be displayed here -->
+            </div>
+        </section>
+
+        <footer>
+            <!-- Your footer content goes here -->
+        </footer>
+        <dialog id="content-container"></dialog>
+    </div>
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</body>
+</html>

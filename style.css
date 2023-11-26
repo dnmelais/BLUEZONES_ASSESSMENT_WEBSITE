@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #fff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "blueZonesMap"
+        "survey"
+        "dataVisualization"
+        "cityInformation"
+        "footer";
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 20px;
+}
+
+header {
+    grid-area: header;
+    background-color: #3498db;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+#blueZonesMap {
+    grid-area: blueZonesMap;
+    background-color: #ffc55b; /* Light Gold */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensure positioning of the clickable areas */
+}
+
+#blueZonesMap img {
+    max-width: 100%; /* Make sure the image doesn't exceed the container width */
+    height: auto;
+}
+
+
+.survey-container {
+    grid-area: survey;
+    background-color: #71c271; /* Light Green */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#dataVisualization {
+    grid-area: dataVisualization;
+    background-color: #c2e0ff; /* Light Blue */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cityInformation {
+    grid-area: cityInformation;
+    background-color: #ffd699; /* Light Orange */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    grid-area: footer;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #3498db; /* Updated color */
+    color: #fff; /* Updated text color */
+    padding: 1rem;
+    text-align: center;
+}
