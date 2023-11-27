@@ -4,27 +4,27 @@ const cityData = [
     {
         city_id: "Loma Linda",
         city_name: "Loma Linda, CA, USA",
-        city_details: "Fun facts."
+        city_details: "A weekly break from the rigors of daily life, the 24-hour Sabbath provides a time to focus on family, God, camaraderie, and nature. These adventists claim this relieves their stress, strengthens social networks, and provides consistent exercise."
     },
     {
         city_id: "Nicoya",
         city_name: "Nicoya, Costa Rica",
-        city_details: "Fun facts."
+        city_details: "“Plan de vida!” (a reason to live). Nicoyan centenarians frequently visit with neighbors, and they tend to live with families and children or grandchildren who provide support, as well as a sense of purpose."
     },
     {
         city_id: "Sardinia",
         city_name: "Sardinia, Italy",
-        city_details: "Fun facts."
+        city_details: "The classic Sardinian diet consists of whole-grain bread, beans, garden vegetables, fruits, and, in some parts of the island, mastic oil. Sardinians also traditionally eat pecorino cheese made from grass-fed sheep, whose cheese is high in omega-3 fatty acids. Meat is largely reserved for Sundays and special occasions."
     },
     {
         city_id: "Ikaria",
         city_name: "Ikaria, Greece",
-        city_details: "Fun facts."
+        city_details: "Today, Ikarians are almost entirely free of dementia and some of the chronic diseases that plague Americans; one in three make it to their 90s. A combination of factors explain it, including geography, culture, diet, lifestyle and outlook. They enjoy strong red wine, late-night domino games and a relaxed pace of life that ignores clocks."
     },
     {
         city_id: "Okinawa",
         city_name: "Okinawa, Japan",
-        city_details: "Fun facts."
+        city_details: "Okinawans have less cancer, heart disease and dementia than Americans, and women there live longer than any women on the planet. Older Okinawans can readily articulate the reason they get up in the morning.Their purpose-imbued lives gives them clear roles of responsibility and feelings of being needed well into their 100s. Embrace “ikigai”!"
     },
 
 ]  
