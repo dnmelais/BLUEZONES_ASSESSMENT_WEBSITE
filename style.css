@@ -2,8 +2,8 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;
-    color: #fff;
+    background-color: #f5f5f5; /* Light gray background */
+    color: #333;
 }
 
 .grid-container {
@@ -12,7 +12,7 @@ body {
         "header"
         "blueZonesMap"
         "survey"
-        "dataVisualization"
+        "bluezoneProjectInfo"
         "cityInformation"
         "footer";
     grid-template-rows: auto auto auto auto auto auto;
@@ -29,32 +29,32 @@ header {
 
 #blueZonesMap {
     grid-area: blueZonesMap;
-    background-color: #ffc55b; /* Light Gold */
+    background-color: #ffc55b;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative; /* Ensure positioning of the clickable areas */
+    position: relative;
 }
 
 #blueZonesMap img {
-    max-width: 100%; /* Make sure the image doesn't exceed the container width */
+    max-width: 100%;
     height: auto;
+    border-radius: 8px; /* Add a slight border radius to the map image */
 }
-
 
 .survey-container {
     grid-area: survey;
-    background-color: #71c271; /* Light Green */
+    background-color: #9bd19b;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#dataVisualization {
-    grid-area: dataVisualization;
-    background-color: #c2e0ff; /* Light Blue */
+#bluezoneProjectInfo {
+    grid-area: bluezoneProjectInfo;
+    background-color: #81b4e7;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
@@ -63,7 +63,7 @@ header {
 
 #cityInformation {
     grid-area: cityInformation;
-    background-color: #ffd699; /* Light Orange */
+    background-color: #ffd699;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
@@ -76,58 +76,26 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #3498db; /* Updated color */
-    color: #fff; /* Updated text color */
+    background-color: #3498db;
+    color: #fff;
     padding: 1rem;
     text-align: center;
 }
 
-            .survey-container {
-                grid-area: survey;
-                background-color: #9bd19b; /* Light Green */
-                text-align: center;
-                padding: 20px;
-                border-radius: 10px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-        
-            h1 {
-                color: #fff; /* White */
-            }
-        
-            .question {
-                margin-bottom: 20px;
-            }
-        
-            label {
-                display: block;
-                margin-bottom: 10px;
-            }
-        
-            .options {
-                display: inline-block;
-                margin-left: 10px;
-            }
-        
-            input[type="radio"] {
-                margin-right: 5px;
-            }
-        
-            button {
-                background-color: #3498db; /* Blue */
-                color: white;
-                padding: 10px 20px;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-            }
-        
-            button:hover {
-                background-color: #45a049;
-            }
-        
-            .result-message {
-                margin-top: 20px;
-                font-weight: bold;
-            }
-       
+h1 {
+    color: #333; /* Dark text color for h1 elements */
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+button:hover {
+    background-color: #45a049;
+}
