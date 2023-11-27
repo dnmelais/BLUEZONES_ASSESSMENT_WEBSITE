@@ -1,3 +1,5 @@
+const dialog = document.querySelector("dialog")
+
 const cityData = [
     {
         city_id: "Loma Linda",
@@ -44,8 +46,16 @@ showDialog = (city) => {
     dialogContentContainer.innerHTML = dialogContent;
 
     // This is a built-in function from the dialog element on line 23.
-    window.dialog.showModal();
+    dialog.showModal();
+
+    // Close the dialog when the user clicks on the dialog itself
+    dialog.addEventListener('click', (event) => {
+        if (event.target === dialog) {
+            dialog.close();
+        }
+    });
 }
+
 
 function evaluateSurvey() {
     // Get the selected answers

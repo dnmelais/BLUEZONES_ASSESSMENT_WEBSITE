@@ -81,3 +81,53 @@ footer {
     padding: 1rem;
     text-align: center;
 }
+
+            .survey-container {
+                grid-area: survey;
+                background-color: #9bd19b; /* Light Green */
+                text-align: center;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+        
+            h1 {
+                color: #fff; /* White */
+            }
+        
+            .question {
+                margin-bottom: 20px;
+            }
+        
+            label {
+                display: block;
+                margin-bottom: 10px;
+            }
+        
+            .options {
+                display: inline-block;
+                margin-left: 10px;
+            }
+        
+            input[type="radio"] {
+                margin-right: 5px;
+            }
+        
+            button {
+                background-color: #3498db; /* Blue */
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        
+            button:hover {
+                background-color: #45a049;
+            }
+        
+            .result-message {
+                margin-top: 20px;
+                font-weight: bold;
+            }
+       
