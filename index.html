@@ -10,7 +10,7 @@
 <body>
     <div class="grid-container">
         <header>
-            <h1> Blue Zones City Assessment Webpage </h1>
+            <h1> Got The Election Year Blues? </h1>
             <p> Blue Zones Project® by Sharecare is a community-led well-being improvement initiative designed to make healthy choices easier through permanent changes to a city's environment, policy, and social networks. Blue Zones Project is based on research by Dan Buettner, a National Geographic Fellow and New York Times best-selling author who identified five cultures of the world—or blue zones —with the highest concentration of people living to 100 years or older. The Project incorporates Buettner’s findings and works with cities to implement policies and programs that will move a community toward optimal health and well-being.</p>
         </header>
 
@@ -95,12 +95,14 @@
             
         </section>
 
-        <!-- Census Bureau API Section -->
-        <section id="censusBureauAPI">
-            <h2>Search Your City's Stats</h2>
-            <input type="text" id="cityInput" placeholder="Enter your U.S. city">
-            <button onclick="searchCity()">Search</button>
-            <div id="cityResults">
+        <!-- Rest Countries API Section -->
+        <section id="restCountriesAPI">
+            <h2>Rest Countries API</h2>
+            <!-- load countries here using js -->
+            <div class="countries" id="countries">
+
+
+            </div>
                 <!-- Results from the Census Bureau API will be displayed here -->
             </div>
         </section>
@@ -114,5 +116,6 @@
     
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    
 </body>
 </html>

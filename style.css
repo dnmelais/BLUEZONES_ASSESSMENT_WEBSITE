@@ -2,8 +2,8 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5; /* Light gray background */
-    color: #fff;
+    background-color: #f6cd0a; /* Translucent light blue background */
+    color: #fff; /* Dark text color for the body */
 }
 
 .grid-container {
@@ -13,79 +13,59 @@ body {
         "blueZonesMap"
         "survey"
         "bluezoneProjectInfo"
+        "restCountriesAPI"
         "cityInformation"
         "footer";
-    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
     gap: 20px;
 }
 
 header {
     grid-area: header;
-    background-color: #3498db;
+    background-color: #22c8c3;
     color: #fff;
     padding: 1rem;
     text-align: center;
 }
 
-#blueZonesMap {
-    grid-area: blueZonesMap;
-    background-color: #ffc55b;
+#blueZonesMap,
+#survey,
+#bluezoneProjectInfo,
+#restCountriesAPI {
+    background-color: #2b3511; /* Translucent light blue background */
     text-align: center;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-#blueZonesMap img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px; /* Added a slight border radius to the map image */
 }
 
 .survey-container {
-    grid-area: survey;
-    background-color: #9bd19b;
+    background-color: #22c8c3; /* Translucent light blue background */
     text-align: center;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#bluezoneProjectInfo {
-    grid-area: bluezoneProjectInfo;
-    background-color: #81b4e7;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fff; /* Dark gray text color for headers */
 }
 
-#censusBureauAPI {
-    grid-area: censusBureauAPI;
-    background-color: #ffd699;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Cool effect for headers */
+h1, h2, {
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5); /* White text shadow for cool effect */
 }
 
-footer {
-    grid-area: footer;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #3498db;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
+
+/* Add the following styles for the centered survey form */
+#surveyForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-h1 {
-    color: #333; /* Dark text color for h1 elements */
-}
-
+/* Update the button style */
 button {
     background-color: #3498db;
     color: white;
@@ -94,22 +74,35 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Smooth transition on hover */
+    margin-top: 20px; /* Add some margin at the top */
 }
 
 button:hover {
     background-color: #45a049;
 }
 
-/* Added a media query for screens with a maximum width of 600 pixels (adjust as needed) */
-@media only screen and (max-width: 600px) {
-    .grid-container {
-        grid-template-areas:
-            "header"
-            "blueZonesMap"
-            "survey"
-            "dataVisualization"
-            "cityInformation"
-            "footer";
-        grid-template-rows: auto auto auto auto auto auto;
-        gap: 10px; /* Adjust the gap as needed for smaller screens */
-    }
+.countries {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the column width as needed */
+    gap: 20px;
+}
+
+.country-div {
+    background: white;
+    border: 1px solid #333;
+    padding: 15px;
+    text-align: center; /* Center text content horizontally */
+}
+
+.country-div h2,
+.country-div h4 {
+    color: #333; /* Dark text color */
+}
+
+.country-div img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
