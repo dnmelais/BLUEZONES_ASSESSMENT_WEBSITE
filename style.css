@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f5f5f5; /* Light gray background */
-    color: #333;
+    color: #fff;
 }
 
 .grid-container {
@@ -40,7 +40,7 @@ header {
 #blueZonesMap img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px; /* Add a slight border radius to the map image */
+    border-radius: 8px; /* Added a slight border radius to the map image */
 }
 
 .survey-container {
@@ -61,8 +61,8 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#cityInformation {
-    grid-area: cityInformation;
+#censusBureauAPI {
+    grid-area: censusBureauAPI;
     background-color: #ffd699;
     text-align: center;
     padding: 20px;
@@ -99,3 +99,17 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+/* Added a media query for screens with a maximum width of 600 pixels (adjust as needed) */
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-areas:
+            "header"
+            "blueZonesMap"
+            "survey"
+            "dataVisualization"
+            "cityInformation"
+            "footer";
+        grid-template-rows: auto auto auto auto auto auto;
+        gap: 10px; /* Adjust the gap as needed for smaller screens */
+    }

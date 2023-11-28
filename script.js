@@ -33,7 +33,6 @@ showDialog = (city) => {
     // get the city data from the array above using the identifier that was passed in.
     const cityContent = cityData.find(c => city == c.city_id);
 
-    // Unnecessary console log. Just for learning.
     console.log(`Showing dialog for city: ${cityContent.city_name}`);
 
     const dialogContentContainer = document.getElementById("content-container");

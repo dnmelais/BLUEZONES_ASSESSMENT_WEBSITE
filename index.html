@@ -3,7 +3,8 @@
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
     <title>Blue Zones City Assessment</title>
 </head>
 <body>
@@ -17,17 +18,17 @@
             <h2>Blue Zones Map</h2>
             <h3>Click on the red dots to reveal information about each city</h3>
             
-            <!-- Use an image map to define clickable areas on the map -->
+            <!-- Image of a map with clickable areas -->
             <img src="images/map.jpg" alt="Blue Zones Map" usemap="#blueZonesMapArea">
         
             <map name="blueZonesMapArea">
-                <!-- Define clickable areas for each city -->
+                <!-- Defined clickable areas for each city -->
                 <area shape="circle" coords="88,133,30" alt="Loma Linda, CA, USA" onclick="showDialog('Loma Linda')">
                 <area shape="circle" coords="161,191,30" alt="Nicoya, Costa Rica" onclick="showDialog('Nicoya')">
                 <area shape="circle" coords="356,121,30" alt="Sardinia, Italy" onclick="showDialog('Sardinia')">
                 <area shape="circle" coords="389,128,30" alt="Ikaria, Greece" onclick="showDialog('Ikaria')">
                 <area shape="circle" coords="591,127,30" alt="Okinawa, Japan" onclick="showDialog('Okinawa')">
-                <!-- Add more areas as needed -->
+                
             </map>
             <dialog id="content-container"></dialog>
         </section>
@@ -90,13 +91,13 @@
         <section id="bluezoneProjectInfo">
             <h1>MAKE THE HEALTHY CHOICE THE EASY CHOICE</h1>
             <h3>What if generations of people could live longer, healthier, happier lives? What if it wasn't so hard to do because their surroundings made it easy?</h3>
-            <p>The proof is in the zones! <a href="https://info.bluezonesproject.com/results">Blue Zone Project Results</a> Because healthier environments naturally nudge people toward healthier choices, Blue Zones Project focuses on influencing the Life Radius® — the area close to home in which people spend 90 percent of their lives. Blue Zones Project best practices use people, places, and policy as levers to transform those surroundings. Our communities have populations with greater well-being, improved health outcomes, reduced costs, and increased civic pride, all of which support healthy economic development. Learn more about how the Blue Zones Project can transform your city now and for years to come! <a href="https://info.bluezonesproject.com/home">Blue Zones Project</a></p>
-            <!-- Your charts/graphs go here -->
+            <p>The proof is in the zones. <a href="https://info.bluezonesproject.com/results">Blue Zone Project Results</a> Because healthier environments naturally nudge people toward healthier choices, Blue Zones Project focuses on influencing the Life Radius® — the area close to home in which people spend 90 percent of their lives. Blue Zones Project best practices use people, places, and policy as levers to transform those surroundings. Our communities have populations with greater well-being, improved health outcomes, reduced costs, and increased civic pride, all of which support healthy economic development. Learn more about how the Blue Zones Project can transform your city now and for years to come! <a href="https://info.bluezonesproject.com/home">Blue Zones Project</a></p>
+            
         </section>
 
-        <!-- City Information Section -->
-        <section id="cityInformation">
-            <h2>City Information</h2>
+        <!-- Census Bureau API Section -->
+        <section id="censusBureauAPI">
+            <h2>Search Your City's Stats</h2>
             <input type="text" id="cityInput" placeholder="Enter your U.S. city">
             <button onclick="searchCity()">Search</button>
             <div id="cityResults">
@@ -111,7 +112,7 @@
         
     </div>
     
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </body>
 </html>
