@@ -72,6 +72,7 @@ header p {
 
 #resultMessage {
     color: red;
+    margin:10px
 }
 
 
@@ -126,18 +127,24 @@ button:hover {
     background: white;
     border: 1px solid #333;
     padding: 15px;
-    text-align: center; 
-}
-
-.country-div h2,
-.country-div h4 {
-    color: #333; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .country-div img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+.country-div h2,
+.country-div h4 {
+    color: #333; 
 }
 
 button:hover {
