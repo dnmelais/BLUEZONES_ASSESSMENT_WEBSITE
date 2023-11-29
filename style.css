@@ -61,6 +61,13 @@ header p {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+#blueZonesMap img {
+    max-width: 100%;
+    height: auto;
+    margin: auto; /* Add this line to center the image */
+    display: block; /* This ensures that the margin: auto works properly */
+}
+
 
 dialog {
     color: #000; /* Set the default text color for the dialog content */
