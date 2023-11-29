@@ -28,6 +28,23 @@ header {
     text-align: center;
 }
 
+header {
+    grid-area: header;
+    background-color: #22c8c3;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.5rem; /* Adjust the font size for smaller screens */
+}
+
+header p {
+    font-size: 1rem; /* Adjust the font size for smaller screens */
+}
+
+
 #blueZonesMap,
 #survey,
 #bluezoneProjectInfo,

@@ -2,7 +2,6 @@
 ## Blue Zones City Assessment Website
 
 Welcome to the Blue Zones City Assessment webpage! This site provides information about the Blue Zones Project® by Sharecare, an initiative aimed at improving well-being in communities by implementing changes to the environment, policies, and social networks. Explore the Blue Zones map, learn about the project, and assess if your city is a good fit.
-Features
 
 ## Blue Zones Map
 Explore the Blue Zones Map and discover information about cities with high concentrations of centenarians. Click on the red dots to reveal details about each city's unique lifestyle and practices.
