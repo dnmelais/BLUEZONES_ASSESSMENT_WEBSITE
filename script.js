@@ -71,10 +71,12 @@ function evaluateSurvey() {
     const yesCount = Object.values(answers).filter(answer => answer === 'yes').length;
 
     // Display result message
+    // Display result message
     const resultMessage = document.getElementById('resultMessage');
     resultMessage.innerHTML = (yesCount >= 3) ?
-        "Your city is an excellent candidate for the Blue Zones Project!" :
-        "Your city may not be the best fit for the Blue Zones Project.";
+    "Your city is an excellent candidate for the Blue Zones Project!" :
+    "Your city may not be the best fit for the Blue Zones Project at this time.";
+
 }
 // this is an arrow function
  const loadCountryAPI = () =>{
@@ -112,3 +114,13 @@ function evaluateSurvey() {
         `;
       };
       
+    
+      function jumpToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    
+    

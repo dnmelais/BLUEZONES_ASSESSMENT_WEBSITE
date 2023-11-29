@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script>
+        function jumpToBottom() {
+            // Scroll smoothly to the bottom of the page
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    
 
     <title>Blue Zones City Assessment</title>
 </head>
@@ -12,7 +24,7 @@
     <div class="grid-container">
         <header>
             <h1> Feeling The Election Year Blues? </h1>
-            <p> Explore the transformative world of the Blue Zones Project® by Sharecare—a community-led initiative dedicated to enhancing well-being through sustainable changes in a city's environment, policy, and social fabric. Rooted in the groundbreaking research of Dan Buettner, a National Geographic Fellow and bestselling author, the Blue Zones Project identifies and collaborates with cities to implement policies and programs that foster optimal health and well-being.</p>
+            <p> Imagine a better way of living right in your own city! Explore the transformative world of the Blue Zones Project® by Sharecare—a community-led initiative dedicated to enhancing well-being through sustainable changes in a city's environment, policy, and social fabric. Rooted in the groundbreaking research of Dan Buettner, a National Geographic Fellow and bestselling author, the Blue Zones Project identifies and collaborates with cities to implement policies and programs that foster optimal health and well-being.</p>
         </header>
 
         <section id="blueZonesMap">
@@ -31,7 +43,6 @@
                 <area shape="circle" coords="591,127,30" alt="Okinawa, Japan" onclick="showDialog('Okinawa')">
                 
             </map>
-            <dialog id="content-container"></dialog>
         </section>
 
         <!-- Survey Section -->
@@ -91,26 +102,43 @@
         <!-- Blue Zone Project Info Section -->
         <section id="bluezoneProjectInfo">
             <h1>MAKE THE HEALTHY CHOICE THE EASY CHOICE</h1>
-            <h3>What if generations of people could live longer, healthier, happier lives? What if it wasn't so hard to do because their surroundings made it easy?</h3>
+            <h3>What if generations of people could live longer, healthier, happier lives? 
+            
             <p>The proof is in the zones. <a href="https://info.bluezonesproject.com/results">Blue Zone Project Results</a> Because healthier environments naturally nudge people toward healthier choices, Blue Zones Project focuses on influencing the Life Radius® — the area close to home in which people spend 90 percent of their lives. Blue Zones Project best practices use people, places, and policy as levers to transform those surroundings. Our communities have populations with greater well-being, improved health outcomes, reduced costs, and increased civic pride, all of which support healthy economic development. Learn more about how the Blue Zones Project can transform your city now and for years to come! <a href="https://info.bluezonesproject.com/home">Blue Zones Project</a></p>
             
         </section>
 
         <!-- Rest Countries API Section -->
         <section id="restCountriesAPI">
-            <H1>190 Countries To Go!</H1>
+            <h1>190 Countries To Go!</h1>
             <h3>Rest Countries API</h3>
-            <!-- load countries here using js -->
-            <div class="countries" id="countries">
+        <!-- Jump to Bottom Button -->
+        <button onclick="jumpToBottom()" style="background-color: #3498db; color: #fff; border: none; padding: 10px 20px; margin: 10px;">Jump to Bottom</button>
+        <!-- load countries here using js -->
+        <div class="countries" id="countries">
+        <!-- Results from the Census Bureau API will be displayed here -->
+        </div>
+
+        </section>
 
 
             </div>
-                <!-- Results from the Census Bureau API will be displayed here -->
+                
             </div>
         </section>
 
         <footer>
-            <!-- Your footer content goes here -->
+            <!-- Image and Text Section -->
+            <section id="aboutMe">
+            <div class="about-me-container">
+            <img src="images/me.jpg" alt="Nadia Melaisis" class="about-me-image">
+            <p class="about-me-text">Enthusiastically brought to you by Nadia Melaisis. Thank you for visiting my first web page!</p>
+    </div>
+        </section>
+        <!-- Jump to Top Button with Inline Style -->
+        <button onclick="jumpToTop()" style="background-color: #3498db; color: #fff; border: none; padding: 10px 20px; margin-top: 10px;">Jump to Top</button>
+
+            
         </footer>
         <dialog id="content-container"></dialog>
         

@@ -1,10 +1,16 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Merriweather', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f6cd0a; /* Translucent light blue background */
-    color: #fff; /* Dark text color for the body */
+    background-color: #f6cd0a;
+    color: #fff;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', serif;
+    color: #fff;
+}
+
 
 .grid-container {
     display: grid;
@@ -49,7 +55,7 @@ header p {
 #survey,
 #bluezoneProjectInfo,
 #restCountriesAPI {
-    background-color: #2b3511; /* Translucent light blue background */
+    background-color: #2b3511; /* Color of lush forests */
     text-align: center;
     padding: 20px;
     border-radius: 10px;
@@ -57,32 +63,34 @@ header p {
 }
 
 .survey-container {
-    background-color: #22c8c3; /* Translucent light blue background */
+    background-color: #22c8c3; /* Color of Mediterranean water */
     text-align: center;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
-h1, h2, h3, h4, h5, h6 {
-    color: #fff; /* Dark gray text color for headers */
+#resultMessage {
+    color: red;
 }
 
-/* Cool effect for headers */
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fff; 
+}
+
 h1, h2, {
     text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5); /* White text shadow for cool effect */
 }
 
 
-/* Add the following styles for the centered survey form */
 #surveyForm {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Update the button style */
+
 button {
     background-color: #3498db;
     color: white;
@@ -91,18 +99,26 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Smooth transition on hover */
-    margin-top: 20px; /* Add some margin at the top */
+    margin-top: 20px; 
 }
 
 button:hover {
     background-color: #45a049;
 }
 
+#bluezoneProjectInfo a {
+    color: red; 
+}
+
+#bluezoneProjectInfo a:hover {
+    text-decoration: underline; 
+}
+
 .countries {
     max-width: 1240px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the column width as needed */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
     gap: 20px;
 }
 
@@ -110,16 +126,58 @@ button:hover {
     background: white;
     border: 1px solid #333;
     padding: 15px;
-    text-align: center; /* Center text content horizontally */
+    text-align: center; 
 }
 
 .country-div h2,
 .country-div h4 {
-    color: #333; /* Dark text color */
+    color: #333; 
 }
 
 .country-div img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#aboutMe {
+    background-color: #22c8c3; 
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; 
+}
+
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me-image {
+    width: 150px; 
+    border-radius: 50%; /* Made it a circle */
+    margin-bottom: 10px; 
+}
+
+.about-me-text {
+    color: #fff; 
+    font-size: 1rem; 
+}
+
+.jump-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px; 
+}
+
+footer {
+    text-align: center;
 }
