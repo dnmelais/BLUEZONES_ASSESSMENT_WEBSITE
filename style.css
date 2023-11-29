@@ -62,6 +62,15 @@ header p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+dialog {
+    color: #000; /* Set the default text color for the dialog content */
+}
+
+#content-container h3 {
+    color: #000; /* Set the text color for the city name */
+}
+
+
 .survey-container {
     background-color: #22c8c3; /* Color of Mediterranean water */
     text-align: center;
