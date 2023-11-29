@@ -17,7 +17,7 @@ Explore information about countries worldwide using the Rest Countries API. Disc
 - Responsive Design: The site is responsive, adapting to both mobile and desktop screens, showcasing integration skills in HTML, CSS, and JavaScript.
 - GitHub Repository: The project is version-controlled using Git, with a minimum of 5 distinct commits.
 - README File: A comprehensive README file is included, explaining the project, its features, and providing instructions for reviewers to run the project.
-- Feature Implementation: Three features from the provided list are integrated, showcasing the use of arrays, objects, sets, maps, regular expressions, and third-party APIs.
+- Feature Implementation: Three features from the provided list are integrated, showcasing the use of arrays, objects, sets, maps, regular expressions, and third-party APIs. (See Feature Implementation section below for a more comprehensive summary of the Code:YOU Capstone Project requirements my project fulfills.)
 
 ## How to Run the Project
 1. Clone the GitHub repository.
