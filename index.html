@@ -9,7 +9,7 @@
 
     <script>
         function jumpToBottom() {
-            // Scroll smoothly to the bottom of the page
+            // Scrolls smoothly to the bottom of the page
             window.scrollTo({
                 top: document.body.scrollHeight,
                 behavior: 'smooth'
@@ -18,7 +18,7 @@
     </script>
     
 
-    <title>Blue Zones City Assessment</title>
+    <title>Blue Zones Project City Assessment</title>
 </head>
 <body>
     <div class="grid-container">
@@ -28,14 +28,23 @@
         </header>
 
         <section id="blueZonesMap">
-            <h2>Tips from the Orginal Blue Zones!</h2>
-            <h3>Click on the red dots to reveal information about each city</h3>
             
-            <!-- Image of a map with clickable areas -->
-            <img src="images/map.jpg" alt="Blue Zones Map" usemap="#blueZonesMapArea">
+                <!-- Google My Maps -->
+                <iframe
+                    src="https://www.google.com/maps/d/u/0/embed?mid=1WrIJ4POGtK8zTYF_vKmcajddIumWHHI"
+                    width="80%"
+                    height="600"
+                    frameborder="0"
+                    style="border:0"
+                    allowfullscreen
+                ></iframe>
+            </section>
+            
+
+            
         
             <map name="blueZonesMapArea">
-                <!-- Defined clickable areas for each city -->
+            
                 <area shape="circle" coords="88,133,30" alt="Loma Linda, CA, USA" onclick="showDialog('Loma Linda')">
                 <area shape="circle" coords="161,191,30" alt="Nicoya, Costa Rica" onclick="showDialog('Nicoya')">
                 <area shape="circle" coords="356,121,30" alt="Sardinia, Italy" onclick="showDialog('Sardinia')">
@@ -47,124 +56,119 @@
         
        <!-- Autocomplete Search Section -->
 <section id="autocompleteSection" style="text-align: center;">
-    <h2>Or Use The Search Bar..</h2>
-    <h3>Type the name of one of the Original Blue Zone cities:</h3>
-    <p>(Loma Linda, Nicoya, Sardinia, Ikaria, Okinawa)</p>
+    <h2 style="color: #3498db;">Search for Blue Zones Cities</h2>
+    <p style="color: #555;">Explore information about the original Blue Zones cities by typing the name of a city below:</p>
 
-    <input type="text" id="autocomplete" placeholder="Search for a Blue Zones city...">
-
-    <div id="cityDetails">
-        <h3>City Details</h3>
-        <p id="cityDescription"></p>
+    <!-- Autocomplete Search Input -->
+    <div style="position: relative;">
+        <input type="text" id="autocomplete" placeholder="Search for a Blue Zones city..."
+            style="padding: 10px; font-size: 16px; width: 300px; border: 1px solid #3498db; border-radius: 5px;">
     </div>
 
-    <!-- jQuery and jQuery UI -->
+    <!-- Include jQuery and jQuery UI -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
+    <!-- Autocomplete Script -->
     <script>
         $(function () {
+            // Array of Blue Zones city names
             const blueZonesCities = ["Loma Linda", "Nicoya", "Sardinia", "Ikaria", "Okinawa"];
 
-            const cityDetailsData = {
-                "Loma Linda": "A weekly break from the rigors of daily life, the 24-hour Sabbath provides a time to focus on family, God, camaraderie, and nature. These adventists claim this relieves their stress, strengthens social networks, and provides consistent exercise.",
-                "Nicoya": "“Plan de vida!” (a reason to live). Nicoyan centenarians frequently visit with neighbors, and they tend to live with families and children or grandchildren who provide support, as well as a sense of purpose",
-                "Sardinia": "The classic Sardinian diet consists of whole-grain bread, beans, garden vegetables, fruits, and, in some parts of the island, mastic oil. Sardinians also traditionally eat pecorino cheese made from grass-fed sheep, whose cheese is high in omega-3 fatty acids. Meat is largely reserved for Sundays and special occasions.",
-                "Ikaria": "Today, Ikarians are almost entirely free of dementia and some of the chronic diseases that plague Americans; one in three make it to their 90s. A combination of factors explain it, including geography, culture, diet, lifestyle and outlook. They enjoy strong red wine, late-night domino games and a relaxed pace of life that ignores clocks.",
-                "Okinawa": "Okinawans have less cancer, heart disease and dementia than Americans, and women there live longer than any women on the planet. Older Okinawans can readily articulate the reason they get up in the morning. Their purpose-imbued lives gives them clear roles of responsibility and feelings of being needed well into their 100s. Embrace “ikigai”!"
-            };
-
+            // Initialize autocomplete
             $("#autocomplete").autocomplete({
                 source: blueZonesCities,
                 select: function (event, ui) {
-                    
-                    displayCityDetails(ui.item.value);
+                    // Call your existing function to show the dialog for the selected city
+                    showDialog(ui.item.value);
                 }
             });
-
-            function displayCityDetails(city) {
-                const cityDescription = cityDetailsData[city];
-                $("#cityDescription").text(cityDescription);
-            }
         });
     </script>
 
+    <!-- Autocomplete Styling -->
     <style>
         #autocompleteSection {
-            padding: 10px; 
+            padding: 20px; /* Adjust padding as needed */
         }
 
         #autocomplete {
             padding: 10px;
             font-size: 16px;
+            width: 300px;
+            border: 1px solid #3498db;
+            border-radius: 5px;
+            outline: none; /* Remove input outline */
         }
 
-        #cityDetails {
-            margin-top: 20px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            background-color: #f9f9f9;
+        /* Autocomplete Dropdown Styling */
+        .ui-menu-item {
+            padding: 8px;
+            background-color: #3498db;
+            color: white;
+        }
+
+        .ui-menu-item:hover {
+            background-color: #2980b9;
         }
     </style>
 </section>
 
+</section>
 
+<!-- Improved Survey Section -->
+<div class="survey-container">
+    <h1>Curious about the Blue Zones Project for your city?</h1>
 
-        <!-- Survey Section -->
-        <div class="survey-container">
-            <h1>Curious about the Blue Zones Project for your city?</h1>
-            <form id="surveyForm">
-                <div class="question">
-                    <label for="q1">1. Does your city have a YMCA, Red Cross, Disaster Response, or similar community organizations?</label>
-                    <div class="options">
-                        <input type="radio" name="q1" value="yes"> Yes
-                        <input type="radio" name="q1" value="no"> No
-                    </div>
-                </div>
-        
-                <div class="question">
-                    <label for="q2">2. Is your city’s median age between 35-50 years old?</label>
-                    <div class="options">
-                        <input type="radio" name="q2" value="yes"> Yes
-                        <input type="radio" name="q2" value="no"> No
-                    </div>
-                </div>
-        
-                <div class="question">
-                    <label for="q3">3. Do the citizens in your city have good access to grocery stores and restaurants?</label>
-                    <div class="options">
-                        <input type="radio" name="q3" value="yes"> Yes
-                        <input type="radio" name="q3" value="no"> No
-                    </div>
-                </div>
-        
-                <div class="question">
-                    <label for="q4">4. Do most of the citizens in your city have a religious practice?</label>
-                    <div class="options">
-                        <input type="radio" name="q4" value="yes"> Yes
-                        <input type="radio" name="q4" value="no"> No
-                    </div>
-                </div>
-        
-                <div class="question">
-                    <label for="q5">5. In your opinion, could the overall sense of wellbeing in your community stand to be improved?</label>
-                    <div class="options">
-                        <input type="radio" name="q5" value="yes"> Yes
-                        <input type="radio" name="q5" value="no"> No
-                    </div>
-                </div>
-        
-                <button type="button" onclick="evaluateSurvey()">Submit</button>
-            </form>
-        
-            <div id="resultMessage" class="result-message"></div>
-        </div>
-        
-        
-        
+    <form id="surveyForm">
+        <div class="question">
+            <label for="q1">1. Does your city have a YMCA, Red Cross, Disaster Response, or similar community organizations?</label>
+            <div class="options">
+                <input type="radio" name="q1" value="yes"> Yes
+                <input type="radio" name="q1" value="no"> No
+            </div>
         </div>
 
+        <div class="question">
+            <label for="q2">2. Is your city’s median age between 35-50 years old?</label>
+            <div class="options">
+                <input type="radio" name="q2" value="yes"> Yes
+                <input type="radio" name="q2" value="no"> No
+            </div>
+        </div>
+
+        <div class="question">
+            <label for="q3">3. Do the citizens in your city have good access to grocery stores and restaurants?</label>
+            <div class="options">
+                <input type="radio" name="q3" value="yes"> Yes
+                <input type="radio" name="q3" value="no"> No
+            </div>
+        </div>
+
+        <div class="question">
+            <label for="q4">4. Do most of the citizens in your city have a religious practice?</label>
+            <div class="options">
+                <input type="radio" name="q4" value="yes"> Yes
+                <input type="radio" name="q4" value="no"> No
+            </div>
+        </div>
+
+        <div class="question">
+            <label for="q5">5. In your opinion, could the overall sense of wellbeing in your community stand to be improved?</label>
+            <div class="options">
+                <input type="radio" name="q5" value="yes"> Yes
+                <input type="radio" name="q5" value="no"> No
+            </div>
+        </div>
+
+        <button type="button" onclick="evaluateSurvey()">Submit</button>
+    </form>
+
+    <div id="resultMessage" class="result-message"></div>
+</div>
+
+
+        
         <!-- Blue Zone Project Info Section -->
         <section id="bluezoneProjectInfo">
             <h1>MAKE THE HEALTHY CHOICE THE EASY CHOICE</h1>
