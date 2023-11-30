@@ -68,6 +68,44 @@ header p {
     display: block; /* This ensures that the margin: auto works properly */
 }
 
+/* Autocomplete Styling */
+<style>
+    #autocompleteSection {
+        padding: 20px; /* Adjust padding as needed */
+    }
+
+    #autocomplete {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    #cityDetails {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        color: black;
+    }
+
+    #cityDescription {
+        color: black; /* Change this to the desired text color */
+    }
+
+    /* Autocomplete Dropdown Styling */
+    .ui-menu-item {
+        padding: 8px; /* Adjust padding as needed */
+        background-color: #3498db; /* Change this to the desired background color */
+        color: white; /* Change this to the desired text color */
+    }
+</style>
+
+
+#cityDescription {
+    color: black; /* Change this to the desired text color */
+}
+
+
 
 dialog {
     color: #000; /* Set the default text color for the dialog content */

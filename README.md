@@ -22,7 +22,7 @@ Explore information about countries worldwide using the Rest Countries API. Disc
 ## How to Run the Project
 1. Clone the GitHub repository.
 2. Open the index.html file in your preferred web browser.
-3. Explore the Blue Zones Map, take the survey, learn about the Blue Zones Project, and discover information about countries using the Rest Countries API.
+3. Explore the Blue Zones Map and search bar, take the survey, learn about the Blue Zones Project, and discover information about countries using the Rest Countries API.
 
 ## Features Implementation
 **Analyze data that is stored in arrays, objects, sets, or maps and display information about it in your app:**
@@ -40,3 +40,6 @@ The dialog itself, showing city details in a structured format, serves as an eff
 I successfully integrated data from the Rest Countries API by using the fetch function to obtain information about various countries.
 The retrieved data is then used to dynamically generate content for each country, displaying flags, population, region, and capital. This showcases the integration of external API data into my application, enriching it with real-world information.
 
+**Retrieve data from a third-party API and use it to display something within your app:**
+  
+The Autocomplete Search Bar interacts with the third-party API provided by jQuery UI for autocomplete functionality. It retrieves data (Blue Zones city names) from this API and uses it to display suggestions within my app as users type. This enhances the user experience by providing real-time suggestions based on the available Original Blue Zones cities.

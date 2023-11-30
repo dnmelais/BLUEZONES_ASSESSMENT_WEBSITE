@@ -24,7 +24,7 @@ const cityData = [
     {
         city_id: "Okinawa",
         city_name: "Okinawa, Japan",
-        city_details: "Okinawans have less cancer, heart disease and dementia than Americans, and women there live longer than any women on the planet. Older Okinawans can readily articulate the reason they get up in the morning.Their purpose-imbued lives gives them clear roles of responsibility and feelings of being needed well into their 100s. Embrace “ikigai”!"
+        city_details: "Okinawans have less cancer, heart disease and dementia than Americans, and women there live longer than any women on the planet. Older Okinawans can readily articulate the reason they get up in the morning. Their purpose-imbued lives gives them clear roles of responsibility and feelings of being needed well into their 100s. Embrace “ikigai”!"
     },
 
 ]  
