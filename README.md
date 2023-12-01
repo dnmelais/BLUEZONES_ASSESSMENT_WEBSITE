@@ -35,7 +35,7 @@ I have effectively organized city data in the cityData array, where each element
 
 - Google MyMaps
 
-The interactive map with clickable areas represents a visually appealing way to explore information about the original Blue Zones. Each city is clickable, and the information is displayed in a user-friendly way. The dialog itself, showing city details in a structured format, serves as an effective visualization of the data. Additionally, the Google My Maps Integration through the <iframe> enhances the user interface by providing an interactive map feature. This fulfills the "Visualize data in a user-friendly way" requirement, offering users an engaging and informative experience.
+The interactive map with clickable areas represents a visually appealing way to explore information about the original Blue Zones. Each city is clickable, and the information is displayed in a user-friendly way. The dialog itself, showing city details in a structured format, serves as an effective visualization of the data. Additionally, the Google My Maps Integration through the <iframe> enhances the user interface by providing an interactive map feature. 
 
 
 **Retrieve data from a third-party API and use it to display something within your app OR Create a form and store the submitted values using an external API (e.g., a contact form, survey, etc.):**

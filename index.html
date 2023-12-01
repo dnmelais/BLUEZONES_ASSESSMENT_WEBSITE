@@ -79,39 +79,14 @@
             $("#autocomplete").autocomplete({
                 source: blueZonesCities,
                 select: function (event, ui) {
-                    // Call your existing function to show the dialog for the selected city
+                    
                     showDialog(ui.item.value);
                 }
             });
         });
     </script>
 
-    <!-- Autocomplete Styling -->
-    <style>
-        #autocompleteSection {
-            padding: 20px; /* Adjust padding as needed */
-        }
 
-        #autocomplete {
-            padding: 10px;
-            font-size: 16px;
-            width: 300px;
-            border: 1px solid #3498db;
-            border-radius: 5px;
-            outline: none; /* Remove input outline */
-        }
-
-        /* Autocomplete Dropdown Styling */
-        .ui-menu-item {
-            padding: 8px;
-            background-color: #3498db;
-            color: white;
-        }
-
-        .ui-menu-item:hover {
-            background-color: #2980b9;
-        }
-    </style>
 </section>
 
 </section>
