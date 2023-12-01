@@ -3,8 +3,8 @@
 
 Welcome to the Blue Zones City Assessment webpage! This site provides information about the Blue Zones Project® by Sharecare, an initiative aimed at improving well-being in communities by implementing changes to the environment, policies, and social networks. Explore the Blue Zones map, learn about the project, and assess if your city is a good fit.
 
-## Blue Zones Map
-Explore the Blue Zones Map and discover information about cities with high concentrations of centenarians. Click on the red dots to reveal details about each city's unique lifestyle and practices.
+## MyMaps Section
+Explore The Original Blue Zones Map and discover information about cities with high concentrations of centenarians. Click on the icons to reveal details about each city's unique lifestyle and practices.
 ## Survey Section
 Curious if your city is a good fit for the Blue Zones Project? Take our survey to assess key factors such as community organizations, median age, access to amenities, religious practices, and overall well-being. Get instant feedback on whether your city is a good candidate for the Blue Zones Project.
 ## Blue Zone Project Info Section
@@ -22,20 +22,25 @@ Explore information about countries worldwide using the Rest Countries API. Disc
 ## How to Run the Project
 1. Clone the GitHub repository.
 2. Open the index.html file in your preferred web browser.
-3. Explore the Blue Zones Map and search bar, take the survey, learn about the Blue Zones Project, and discover information about countries using the Rest Countries API.
+3. Explore The Original Blue Zones Map and search bar, take the survey, learn about the Blue Zones Project, and discover information about countries using the Rest Countries API.
 
 ## Features Implementation
-**Analyze data that is stored in arrays, objects, sets, or maps and display information about it in your app:**
+**Analyze data that is stored in arrays, objects, sets, or maps and display information about it in your app:** 
 
-I have effectively organized city data in the cityData array. Each element in the array corresponds to a city, containing information such as city_id, city_name, and city_details.
-The showDialog function utilizes this array to dynamically generate content for the dialog box based on the city that the user clicks on the map. This demonstrates the effective use of arrays and objects to manage and present data.
+- Autocomplete Search Bar
+
+I have effectively organized city data in the cityData array, where each element corresponds to a city, encompassing information like city_id, city_name, and city_details. Additionally, the Autocomplete Search Bar engages with the jQuery UI API, retrieving Blue Zones city names in real-time as users type, enriching the user experience with dynamic suggestions. 
 
 **Visualize data in a user-friendly way (e.g., graph, chart, etc.):**
 
-The interactive map with clickable areas represents a visually appealing way to explore information about the original Blue Zones. Each city is clickable, and the information is displayed in a user-friendly way.
-The dialog itself, showing city details in a structured format, serves as an effective visualization of the data. The styling and design choices contribute to a positive user experience.
+- Google MyMaps
+
+The interactive map with clickable areas represents a visually appealing way to explore information about the original Blue Zones. Each city is clickable, and the information is displayed in a user-friendly way. The dialog itself, showing city details in a structured format, serves as an effective visualization of the data. Additionally, the Google My Maps Integration through the <iframe> enhances the user interface by providing an interactive map feature. This fulfills the "Visualize data in a user-friendly way" requirement, offering users an engaging and informative experience.
+
 
 **Retrieve data from a third-party API and use it to display something within your app OR Create a form and store the submitted values using an external API (e.g., a contact form, survey, etc.):**
+
+- Rest Countries API
 
 I successfully integrated data from the Rest Countries API by using the fetch function to obtain information about various countries.
 The retrieved data is then used to dynamically generate content for each country, displaying flags, population, region, and capital. This showcases the integration of external API data into my application, enriching it with real-world information.
